@@ -34,7 +34,7 @@ router.post
             else
             {
                 console.log('Data Saved');
-                res.redirect('http://localhost:3000');
+                res.redirect('https://blogs-writer.netlify.app/Create');
             }
         });
     }
