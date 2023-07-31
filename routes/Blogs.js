@@ -34,7 +34,7 @@ router.post
             else
             {
                 console.log('Data Saved');
-                res.redirect("https://blogs-writer.netlify.app/Create");
+                res.redirect('https://blogs-writer.netlify.app/Create');
             }
         });
     }
