@@ -1,0 +1,298 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body
+{
+  width: 100%;
+}
+
+/* Styling for the navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #100F3D;
+  padding: 20px 20px;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-buttons {
+  display: flex;
+}
+
+.create-blog-button,
+.view-blogs-button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  color: white;
+  color: #100F3D;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.create-blog-button:hover,
+.view-blogs-button:hover {
+  background-color: rgb(184, 197, 226);
+  color: white;
+}
+
+
+/* Styling for the footer */
+
+.footer-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #100F3D;
+  height: 60px;
+  margin-top: 306px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.footer-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #100F3D;
+  height: 60px;
+  margin-top: 306px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.footer-create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #100F3D;
+  height: 60px;
+  position: relative;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Blog Name */
+.Name{
+  background-color: rgb(184, 197, 226);
+  color: #100F3D;
+  width: 94%;
+  height: 50px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid #111042;
+  font-size: 20px;
+}
+
+/* completed-button */
+.completed-button {
+  padding: 8px 16px;
+  background-color: #100F3D;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 400px;
+  font-size: x-large;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.completed-button:hover {
+  background-color: rgb(184, 197, 226);
+  color: white;
+  border-radius: 5px;
+  border: 5px solid #111042;
+}
+
+/* Home Page */
+.intro{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #111042;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border: none;
+  border-radius: 80px;
+}
+
+.head{
+  font-size: 60px;
+}
+
+.text{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.name-button{
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 8px 16px;
+  color: rgb(184, 197, 226);
+  background-color: #100F3D;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* BlogViewPage.css */
+
+.blog-view-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-title {
+  position: relative;
+  text-align: center;
+  margin: 20px auto;
+  background-color: rgb(184, 197, 226);
+  color: #111042;
+  width: 500px;
+  height: 50px;
+  border: 5px solid #111042;
+  border-radius: 20px;
+}
+
+.blog-item {
+  width: 300px;
+  color: #111042;
+  background-color: rgb(184, 197, 226);
+  padding: 20px;
+  border: 5px solid #111042;
+  cursor: pointer;
+  margin: 5px 5px;
+  border-radius: 20px;
+}
+
+.blog-item:hover{
+  background-color: #111042;
+  color: rgb(184, 197, 226);
+}
+
+.blogs-grid{
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-item h2 {
+  margin: 0;
+}
+
+/* Zoomed-in view */
+.blog-zoom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111042;
+}
+
+.blog-zoom-content {
+  width: 1200px;
+  height: 450px;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+}
+
+.blog-zoom-content h2 {
+  margin-top: 0;
+}
+
+.blog-zoom-content p {
+  margin-bottom: 20px;
+  height: 350px;
+}
+
+.blog-zoom-content button {
+  color: #111042;
+  background-color: rgb(184, 197, 226);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 5px solid #111042;
+  font-weight: bolder;
+  border-radius: 50px;
+}
+
+.blog-zoom-content button:hover{
+  background-color: #111042;
+  color: rgb(184, 197, 226);
+}
